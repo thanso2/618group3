@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prescrptions</title>
+<link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
+<meta charset="utf-8">
+</head>
+<body>
+        <div>
+                <h1 id="page_title">HealthPortal</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">Messages</a></li>
+                    <li><a href="#medical records">Medical Records</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a  href="#billing">Billing</a></li>
+                    <li><a class="active" href="#prescriptions">Prescriptions</a></li>
+                    <li><a href="#contact information">Contact Information</a></li>
+                  </ul>
+                </div>
+                
+    <h1 class ="header">Prescriptions</h1>
+    <form method="POST" action="" name="RefillPerscrption">
+        <fieldset id="PrescriptionList">  
+                <table style="width:100%">
+                        <tr>
+                            <th>Patient First Name</th>
+                            <th>Patient Last Name</th>
+                            <th>Persciption</th>
+                            <th>Prescribing doctor</th>
+                            <th>Pharmacy</th>
+                            <th>Current Expiration</th>
+                            <th>Persciption Lenght</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>John(DB value)</td>
+                            <td>Doe(DB value)</td>
+                            <td>Asprin(DB value)</td>
+                            <td>Dr. Martin(DB value)</td>
+                            <td>CVS(DB value)</td>
+                            <td>08/22/2020(DB value)</td>
+                            <td>1 Year(DB value)</td>
+                            <td><input type="submit" value="Refill"></td>
+                        </tr>
+                        <tr>
+                            <td>John(DB value)</td>
+                            <td>Doe(DB value)</td>
+                            <td>Flonase(DB value)</td>
+                            <td>Dr. Martin(DB value)</td>
+                            <td>CVS(DB value)</td>
+                            <td>11/30/2019(DB value)</td>
+                            <td>3 Months(DB value)</td>
+                            <td><input type="submit" value="Refill"></td>
+                        </tr>
+                    </table>
+        </fieldset>
+    </form>    
+</body>
+</html>
