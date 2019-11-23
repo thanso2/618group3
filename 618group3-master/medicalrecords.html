@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Medical Records</title>
+<link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
+<meta charset="utf-8">
+</head>
+<body>
+        <div>
+                <h1 id="page_title">HealthPortal</h1>
+                <ul>
+                    <li><a href="./mainpage.html">Home</a></li>
+                    <li><a href="./messages.html">Messages</a></li>
+                    <li><a class="active" href="./medicalrecords.html">Medical Records</a></li>
+                    <li><a href="./appointments.html">Appointments</a></li>
+                    <li><a href="./billing.html">Billing</a></li>
+                    <li><a href="./prescriptionrefill.html">Prescriptions</a></li>
+                    <li><a href="./updatecontactinfo.html">Contact Information</a></li>
+                  </ul>
+                </div>
+<body>
+    <h1 class ="header">Medical Records</h1>
+    <form method="POST" action="" name="MedicalRecords">
+        <fieldset id="NameAddress" class="border">  
+            <legend id="section_title" class="legend" >Personal Information</legend>
+            <lable id ="firstn">First Name</lable><input required="required"type="text"placeholder = "e.g. John">
+            </br>
+            <lable id ="lastn">Last Name</lable><input required="required"type="text"placeholder = "e.g. Doe">
+            </br>
+            <lable id ="street">Street Adrress </lable><input required="required"type="text"placeholder = "e.g. 123 street name">
+            </br>
+            <lable id ="city"> City</lable><input required="required"type="text"placeholder = "e.g. New York">
+            </br>
+            <lable id = "state">State</lable>
+                <select>
+					<option value="" disabled selected="selected">Select your option</option>
+                    <option value="al">AL</option>
+                    <option value="ak">AK</option>
+                    <option value="az">AZ</option>
+                    <option value="ar">AR</option>
+                    <option value="ca">CA</option>
+                    <option value="co">CO</option>
+                    <option value="ct">CT</option>
+                    <option value="de">DE</option>
+                    <option value="fl">FL</option>
+                    <option value="ga">GA</option>
+                    <option value="hi">HI</option>
+                    <option value="id">ID</option>
+                    <option value="il">IL</option>
+                    <option value="in">IN</option>
+                    <option value="ia">IA</option>
+                    <option value="ks">KS</option>
+                    <option value="ky">KY</option>
+                    <option value="la">LA</option>
+                    <option value="me">ME</option>
+                    <option value="md">MD</option>
+                    <option value="ma">MA</option>
+                    <option value="mi">MI</option>
+                    <option value="mn">MN</option>
+                    <option value="ms">MS</option>
+                    <option value="mo">MO</option>
+                    <option value="mt">MT</option>
+                    <option value="ne">NE</option>
+                    <option value="nv">NV</option>
+                    <option value="nh">NH</option>
+                    <option value="nm">NM</option>
+                    <option value="ny">NY</option>
+                    <option value="nc">NC</option>
+                    <option value="nd">ND</option>
+                    <option value="oh">OH</option>
+                    <option value="ok">OK</option>
+                    <option value="or">OR</option>
+                    <option value="pa">PA</option>
+                    <option value="ri">RI</option>
+                    <option value="sc">SC</option>
+                    <option value="sd">SD</option>
+                    <option value="tn">TN</option>
+                    <option value="tx">TX</option>
+                    <option value="ut">UT</option>
+                    <option value="vt">VT</option>
+                    <option value="va">VA</option>
+                    <option value="wa">WA</option>
+                    <option value="wy">WV</option>
+                    <option value="wi">WI</option>
+                    <option value="wy">WY</option>
+                </select>
+            </br>
+                <label id ="emailLable"> Email </label><input name = "email" id = "email" type = "email" placeholder = "name@domain.com" required = "true"></br>
+                <label id = "phoneLable">Phone Number</label><input name = "phone" id = "phone" type = "tel" placeholder = "xxx-xxx-xxxx" required = "true"></br>
+            <p>Sex:</p>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </br>
+            <p>Marital Status:</p>
+            <input type="radio" name="marital" value="single"> Single
+            <input type="radio" name="marital" value="married"> Married
+            <input type="radio" name="marital" value="widowed"> Widowed
+            <input type="radio" name="marital" value="divorced"> Divorced
+        </fieldset>
+
+        <fieldset id="Insurance" class="border">
+            <legend id="section_title" class="legend" >Insurance Information</legend>
+                <label id ="InsuranceCompanyLable">Insurance Company </label><input name = "InsuranceCompany" id = "InsuranceCompany" type = "text" required = "true"></br>
+                <label id ="InsuranceIDLable">Insurance ID#</label><input name = "InsuranceID" id = "InsuranceID" type = "text"  required = "true">
+        </fieldset>
+
+        <fieldset id="EmergencyContact" class="border">
+                <legend id="section_title" class="legend" >Emergency Contact</legend>
+                    <label id ="EmergencyContact">Emergency Contact </label><input name = "EmergencyContact" id = "email" type = "text"  required = "false"></br>
+                    <label id ="emergencyphone">Phone</label><input name = "emergencyphone" id = "emergencyphone" type = "text"  required = "false"></br>
+                    <label id ="parentguardian">Parent/Guardian Name(If Relavant)</label><input name = "parentguardian" id = "parentguardian" type = "text"  required = "false"></br>
+                    <label id ="parentaddress">Address</label><input name = "parentaddress" id = "parentaddress" type = "text"  required = "false">  </br>
+                    <label id ="parentphone">Phone</label><input name = "parentphone" id = "parentphone" type = "text"  required = "false">
+        </fieldset>
+
+        <fieldset id="MedicalConditions" class="border">
+                <legend id="section_title" class= "legend">Medical Conditions</legend>
+                <p>Current Medical Conditions:</p>
+                <textarea name="medicalconditions" cols="40" rows="5"></textarea></br> 
+                <p>Current Medications:</p>
+                <textarea name="medicalconditions" cols="40" rows="5"></textarea></br>
+                <p>Allergies:</p>
+                <textarea name="medicalconditions" cols="40" rows="5"></textarea></br>
+                <p>Reasons for Visit:</p>
+                <textarea name="reasonvisit" cols="40" rows="5"></textarea></br>
+        </fieldset>
+    </br>
+        <input type="submit" value="Submit">
+    </form>    
+</body>
+</html>
