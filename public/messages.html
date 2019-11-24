@@ -6,7 +6,7 @@
     <title>HealthPortal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="nodemailer.js"></script>
     <html lang="en"></html>       
 </head>
 <body>
@@ -22,8 +22,19 @@
         <li><a href="./updatecontactinfo.html">Contact Information</a></li>
       </ul>
     </div>
-    <div style="margin-left:25%; height:auto;">
-        <h2>Welcome!</h2>
-        <p>Send a message!</p>
+    <div style="height:auto;">
+        <h2>Send a message</h2>
+        <form name="messages" onsubmit="return sendMail()";>
+            <body>
+                <div class="background">
+                    <div class="transbox">
+                    <fieldset class="border">
+                        <legend>Messages</legend>             
+                        <label>Your email address: </label><input type="text"/> <br/>
+                        <label>Doctor: </label><input type="text"/> <br/>
+                        <label id="message">Message: </label><input type="textbox"/> <br/>
+                    </fieldset>  
+                    <input type="submit" value="Send Message"> 
+                </form> 
 </body>
 </html>
