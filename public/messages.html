@@ -6,7 +6,7 @@
     <title>HealthPortal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
-    <script type="text/javascript" src="nodemailer.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <html lang="en"></html>       
 </head>
 <body>
@@ -24,7 +24,7 @@
     </div>
     <div style="height:auto;">
         <h2>Send a message</h2>
-        <form name="messages" onsubmit="return send();">
+        <form name="messages" method="POST" action="\messages.html">
             <body>
                 <div class="background">
                     <div class="transbox">
