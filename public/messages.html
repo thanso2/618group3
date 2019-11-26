@@ -24,15 +24,16 @@
     </div>
     <div style="height:auto;">
         <h2>Send a message</h2>
-        <form name="messages" method="POST" action="\messages.html">
+        <form name="messages" id="message" method="POST" action="\messages.html">
             <body>
                 <div class="background">
                     <div class="transbox">
                     <fieldset class="border">
                         <legend>Messages</legend>             
-                        <label>Your email address: </label><input type="text"/> <br/>
-                        <label>Doctor: </label><input type="text"/> <br/>
-                        <label id="message">Message: </label><input type="textbox"/> <br/>
+                        <label name="email" id="email">Your email address: </label><input type="text"/> <br/>
+                        <label name="doctor" id="doctor">Doctor: </label><input name="doctor" type="text"/> <br/>
+                        Message: <br/>
+                        <label name="message" id="message"></label><textarea name="message" rows="10" cols="50"></textarea> <br/>
                     </fieldset>  
                     <input type="submit" value="Send Message"> 
                 </form> 
