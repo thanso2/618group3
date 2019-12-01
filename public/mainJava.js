@@ -36,3 +36,7 @@ function checkForm(){
         return false;
     }
 }
+
+function updateRecords(){
+    alert('Medical Records have been updated.');
+}

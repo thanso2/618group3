@@ -3,6 +3,7 @@
 <head>
 <title>UpdateContactInfo</title>
 <link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
+<script type="text/javascript" src="mainJava.js"></script>
 <meta charset="utf-8">
 </head>
 <body>
@@ -19,7 +20,7 @@
                   </ul>
                 </div>
     <h1 class ="header">Contact Information</h1>
-    <form method="POST" action="" name="UpdateContactInfo">
+    <form method="POST" action="" name="UpdateContactInfo" onsubmit="return updateRecords();">
         <fieldset id="NameAddress">  
             <legend id="section_title" class="NameAddress" > Name and Address</legend>
             <lable id ="firstn">First Name</lable><input required="required"type="text"placeholder = "e.g. John">
