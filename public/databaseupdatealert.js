@@ -4,6 +4,8 @@ function userupdated() {
 
 function medicalrecordupdate(){
 	alert("Medical Records updated");
+}
 	
 function appointmentadded(){
 	alert("appointment added");
+}
