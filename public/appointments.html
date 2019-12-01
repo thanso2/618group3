@@ -3,7 +3,6 @@
 <head>
 <title>Appointments</title>
 <link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
-<script type="text/javascript" src="mainJava.js"></script>
 <meta charset="utf-8">
 
       <div>
@@ -16,12 +15,13 @@
                     <li><a href="./billing.html">Billing</a></li>
                     <li><a href="./prescriptionrefill.html">Prescriptions</a></li>
                     <li><a href="./updatecontactinfo.html">Contact Information</a></li>
-                  </ul>
+			 <li><a href="./index.html">Logout</a></li>
+                 </ul>
                 </div>
     <h1>Schedule an Appointment</h1>
-<form method="POST" action="/" name="/appointment" onsubmit="return updateRecords();">
+<form method="POST" action="/" name="/appointment">
     <fieldset id = "appointment">
-    <legend id="section_title" class = "legend">Add an Appointment</legend>
+    <legend id="section_title" class = "legend">Add an Appiontment</legend>
         <lable id ="fname" name = "fname">First Name of patient : </lable><input required="required"type="text"placeholder = "e.g. John">
         </br>
         <lable id ="lname"name = "lname">Last Name of patient :</lable><input required="required"type="text"placeholder = "e.g. Doe">
@@ -45,3 +45,4 @@
 </form>    
 </body>
 </html>
+
