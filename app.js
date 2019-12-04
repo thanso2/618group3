@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.listen(80, function(){
+app.listen(3000, function(){
   console.log("Listening on port 80!")
 });
 
@@ -44,6 +44,13 @@ app.post('/appointments.html', function (req, res) {
       db.collection('appointments').insertOne(req.body);
     }); 
   });
+app.post('/loginPage.html', function (req, res) {
+  dbConn.then(function(db) {
+      db.collection('user_passwords').insertOne(req.body);
+    }); 
+	return res.redirect("/");
+  });
+  
 
 app.post('/messages.html', function(req, res, next) {
 
@@ -53,15 +60,17 @@ app.post('/messages.html', function(req, res, next) {
         port: 465,
         secure: true,
         auth: {
-            user: '',
-            pass: ''
+            user: 'ait618group3@gmail.com',
+            pass: 'T0ws0n@iT618'
         }
     })
     let mailOptions = {
-        from: '',
-        to: '',
+        from: 'Health Portal<ait618group3@gmail.com>',
+        to: 'bradhoffman823@gmail.com',
         subject: 'Message to Dr. ' + req.body.doctor,
-        text: req.body.message
+        text: req.body.message 
+		
     };
-    res.status(200).send(transporter.sendMail(mailOptions))
+      res.status(200).send(transporter.sendMail(mailOptions))
     });
+    
