@@ -20,18 +20,18 @@
                  </ul>
                 </div>
     <h1>Schedule an Appointment</h1>
-<form method="POST" action="/" name="/appointment "onsubmit = "appointmentadded()" >
+<form method="POST" action="/appointments.html" name="/appointments.html"onsubmit = "appointmentadded()" >
     <fieldset id = "appointment">
     <legend id="section_title" class = "legend">Add an Appiontment</legend>
-        <lable id ="fname" name = "fname">First Name of patient : </lable><input name = "fname" required="required"type="text"placeholder = "e.g. John">
+        <label id ="fname" name = "fname">First Name of patient : </label><input name = "fname" required="required"type="text"placeholder = "e.g. John">
         </br>
-        <lable id ="lname"name = "lname">Last Name of patient :</lable><input "name = "lname" required="required"type="text"placeholder = "e.g. Doe">
+        <label id ="lname"name = "lname">Last Name of patient :</label><input name = "lname" required="required"type="text"placeholder = "e.g. Doe">
         </br>
-        <lable id ="date"name ="date">Date </lable><input name ="date" required="required"type="date">
+        <label id ="date"name ="date">Date </label><input name ="date" required="required"type="date">
         </br>
-        <lable id ="time" name ="time">Time</lable><input name ="time" required="required"type="time">
+        <label id ="time" name ="time">Time</label><input name ="time" required="required"type="time">
         </br>
-        <lable id = "nurse" name = "nurse">Assinged Nurse</lable>
+        <label id = "nurse" name = "nurse">Assinged Nurse</label>
             <select name = "nurse" >
                 <option value="" disabled selected="selected">Select your option</option>
                 <option value=" Jane Smith">Jane Smith</option>
@@ -46,4 +46,3 @@
 </form>    
 </body>
 </html>
-
