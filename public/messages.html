@@ -6,7 +6,8 @@
     <title>HealthPortal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="healthportal.css">
-    <script type="text/javascript" src="app.js"></script>
+   	<script type="text/javascript" src="databaseupdatealert.js"></script>
+	<script type="text/javascript" src="app.js"></script>
     <html lang="en"></html>       
 </head>
 <body>
@@ -24,13 +25,13 @@
     </div>
     <div style="height:auto;">
         <h2>Send a message</h2>
-        <form name="messages" id="message" method="POST" action="\messages.html">
+        <form name="messages" id="message" method="POST" action="/messages.html"onsubmit = "emailsent()">
             <body>
                 <div class="background">
                     <div class="transbox">
                     <fieldset class="border">
                         <legend>Messages</legend>             
-                        <label name="email" id="email">Your email address: </label><input type="text"/> <br/>
+                        <label name="email" id="email">Your email address: </label><input name ="email" type="text"/> <br/>
                         <label name="doctor" id="doctor">Doctor: </label><input name="doctor" type="text"/> <br/>
                         Message: <br/>
                         <label name="message" id="message"></label><textarea name="message" rows="10" cols="50"></textarea> <br/>
