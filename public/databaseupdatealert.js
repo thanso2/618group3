@@ -1,5 +1,5 @@
 function userupdated() {
-  alert("User Updated");
+  alert("User information Updated");
 }
 
 function medicalrecordupdate(){
@@ -8,4 +8,7 @@ function medicalrecordupdate(){
 	
 function appointmentadded(){
 	alert("appointment added");
+}
+function emailsent(){
+	alert("email sent");
 }
