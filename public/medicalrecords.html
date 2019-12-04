@@ -25,16 +25,16 @@
     <form method="POST" action="" name="MedicalRecords" onsubmit="return updateRecords();">
         <fieldset id="NameAddress" class="border">  
             <legend id="section_title" class="legend" >Personal Information</legend>
-            <lable id ="firstn">First Name</lable><input required="required"type="text"placeholder = "e.g. John">
+            <label id ="firstn">First Name</label><input name = "fname" required="required"type="text"placeholder = "e.g. John">
             </br>
-            <lable id ="lastn">Last Name</lable><input required="required"type="text"placeholder = "e.g. Doe">
+            <label id ="lastn">Last Name</label><input name = 'lname' required="required"type="text"placeholder = "e.g. Doe">
             </br>
-            <lable id ="street">Street Adrress </lable><input required="required"type="text"placeholder = "e.g. 123 street name">
+            <label id ="street">Street Adrress </label><input name = 'street' required="required"type="text"placeholder = "e.g. 123 street name">
             </br>
-            <lable id ="city"> City</lable><input required="required"type="text"placeholder = "e.g. New York">
+            <label id ="city"> City</label><input name = 'city' required="required"type="text"placeholder = "e.g. New York">
             </br>
-            <lable id = "state">State</lable>
-                <select>
+            <label id = "state">State</label>
+                <select name = 'state'>
 					<option value="" disabled selected="selected">Select your option</option>
                     <option value="al">AL</option>
                     <option value="ak">AK</option>
@@ -87,8 +87,8 @@
                     <option value="wy">WY</option>
                 </select>
             </br>
-                <label id ="emailLable"> Email </label><input name = "email" id = "email" type = "email" placeholder = "name@domain.com" required = "true"></br>
-                <label id = "phoneLable">Phone Number</label><input name = "phone" id = "phone" type = "tel" placeholder = "xxx-xxx-xxxx" required = "true"></br>
+                <label id ="emaillabel"> Email </label><input name = "email" id = "email" type = "email" placeholder = "name@domain.com" required = "true"></br>
+                <label id = "phonelabel">Phone Number</label><input name = "phone" id = "phone" type = "tel" placeholder = "xxx-xxx-xxxx" required = "true"></br>
             <p>Sex:</p>
             <input type="radio" name="gender" value="male"> Male
             <input type="radio" name="gender" value="female"> Female
@@ -102,8 +102,8 @@
 
         <fieldset id="Insurance" class="border">
             <legend id="section_title" class="legend" >Insurance Information</legend>
-                <label id ="InsuranceCompanyLable">Insurance Company </label><input name = "InsuranceCompany" id = "InsuranceCompany" type = "text" required = "true"></br>
-                <label id ="InsuranceIDLable">Insurance ID#</label><input name = "InsuranceID" id = "InsuranceID" type = "text"  required = "true">
+                <label id ="InsuranceCompanylabel">Insurance Company </label><input name = "InsuranceCompany" id = "InsuranceCompany" type = "text" required = "true"></br>
+                <label id ="InsuranceIDlabel">Insurance ID#</label><input name = "InsuranceID" id = "InsuranceID" type = "text"  required = "true">
         </fieldset>
 
         <fieldset id="EmergencyContact" class="border">
@@ -120,9 +120,9 @@
                 <p>Current Medical Conditions:</p>
                 <textarea name="medicalconditions" cols="40" rows="5"></textarea></br> 
                 <p>Current Medications:</p>
-                <textarea name="medicalconditions" cols="40" rows="5"></textarea></br>
+                <textarea name="medications" cols="40" rows="5"></textarea></br>
                 <p>Allergies:</p>
-                <textarea name="medicalconditions" cols="40" rows="5"></textarea></br>
+                <textarea name="allergies" cols="40" rows="5"></textarea></br>
                 <p>Reasons for Visit:</p>
                 <textarea name="reasonvisit" cols="40" rows="5"></textarea></br>
         </fieldset>
@@ -131,3 +131,4 @@
     </form>    
 </body>
 </html>
+
